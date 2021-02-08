@@ -1,0 +1,38 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/personalizedDetail/personalizedDetail",
+    "pages/player/player",
+    "pages/search/search"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#222222",
+    "navigationBarTitleText": "网抑云",
+    "navigationBarTextStyle": "white"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "backgroundColor": "#222222",
+    "color": "#6b6d71",
+    "selectedColor": "#f64269",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "推荐",
+        "iconPath": "/static/images/tabs/tab-home.png",
+        "selectedIconPath": "/static/images/tabs/tab-home-current.png"
+      },
+      {
+        "pagePath": "pages/search/search",
+        "text": "搜索",
+        "iconPath": "/static/images/tabs/tab-home.png",
+        "selectedIconPath": "/static/images/tabs/tab-home-current.png"
+      }
+    ]
+  },
+  "requiredBackgroundModes": [
+    "audio"
+  ]
+}

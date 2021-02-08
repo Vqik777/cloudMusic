@@ -1,0 +1,83 @@
+.player {
+  height: 100%;
+}
+.player .backgroundImgWrapper {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+  opacity: .5;
+}
+.player .backgroundImgWrapper image {
+  width: 100%;
+  height: 100%;
+  filter: blur(40rpx);
+}
+.player .mask {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: #222;
+  z-index: -2;
+}
+.player .disc {
+  width: 592rpx;
+  height: 592rpx;
+  background-image: url("https://s3.music.126.net/mobile-new/img/disc.png?d3bdd1080a72129346aa0b4b4964b75f");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  transform: translate(-50%, -140rpx);
+}
+.player .disc.rotation {
+  animation: rotation 15s linear infinite;
+}
+@keyframes rotation {
+  from {
+    transform: translate(-50%, -140rpx) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -140rpx) rotate(360deg);
+  }
+}
+.player .disc image {
+  width: 368rpx;
+  height: 368rpx;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-top: -184rpx;
+  margin-left: -184rpx;
+}
+.player .progressContainer {
+  position: absolute;
+  width: 90%;
+  bottom: 24%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.player .control {
+  position: absolute;
+  bottom: 8%;
+  display: flex;
+  align-items: center;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.player .control .iconfont {
+  color: #ffcd32;
+  font-size: 80rpx;
+}
+.player .control .icon-bofang,
+.player .control .icon-zanting {
+  font-size: 120rpx;
+  margin: 0 60rpx;
+}

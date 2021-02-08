@@ -1,0 +1,131 @@
+.search {
+    padding: 0 30rpx;
+
+    .searchInput {
+        height: 80rpx;
+        position: relative;
+
+        .icon-search1 {
+            position: absolute;
+            font-size: 40rpx;
+            left: 10rpx;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        input {
+            height: 100%;
+            background-color: #333333;
+            padding: 0 60rpx;
+        }
+        .cancel{
+            position: absolute;
+            z-index: 1;
+            right: 0;
+            top: 0;
+            width: 60rpx;
+            height: 80rpx;
+            text-align: center;
+            line-height: 80rpx;
+            font-size: 40rpx;
+        }
+    }
+
+    .searchListContainer {
+        .searchContent {
+            height: 80rpx;
+            line-height: 80rpx;
+            border-bottom: 1rpx solid #333333;
+
+            text {
+                color: white;
+            }
+        }
+
+        .searchList {
+            height: ~'calc(100vh - 160rpx)';
+
+            .searchItem {
+                height: 80rpx;
+                line-height: 80rpx;
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 1;
+                overflow: hidden;
+
+                .icon-search1 {
+                    margin-right: 10rpx;
+                }
+            }
+        }
+    }
+
+    .history {
+        .title {
+            height: 80rpx;
+            line-height: 100rpx;
+        }
+
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+
+            .historyItem {
+                padding: 5rpx 18rpx;
+                background-color: #333333;
+                margin: 10rpx;
+                border-radius: 15rpx;
+            }
+        }
+        .footer{
+            margin-top: 20rpx;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .icon-shanchu,.text{
+                font-size: 32rpx;
+            }
+        }
+    }
+
+    .hot {
+        .title {
+            height: 80rpx;
+            line-height: 100rpx;
+        }
+
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+
+            .hotItem {
+                width: 50%;
+                height: 80rpx;
+                display: flex;
+                align-items: center;
+
+                .num {
+                    margin: 0 10rpx;
+
+                }
+
+                .name {
+                    display: -webkit-box;
+                    -webkit-box-orient: vertical;
+                    -webkit-line-clamp: 1;
+                    overflow: hidden;
+                }
+
+                image {
+                    width: 35rpx;
+                    height: 20rpx;
+                    margin-left: 10rpx;
+                }
+            }
+        }
+    }
+
+    .contentWrapper{
+        height: ~'calc(100vh - 80rpx)';
+    }
+}

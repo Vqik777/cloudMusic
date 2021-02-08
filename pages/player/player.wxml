@@ -1,0 +1,24 @@
+<view class="player">
+    <!-- 背景图 -->
+    <view class="backgroundImgWrapper">
+        <image src="{{picUrl}}"></image>
+    </view>
+    <!-- 遮罩层 -->
+    <view class="mask"></view>
+    <!-- 唱盘 -->
+    <view class="disc {{isPlaying?'rotation':''}}" bindtap="handleToggleLyricShow" hidden="{{!isHiddenLyric}}">
+        <image src="{{picUrl}}"></image>
+    </view>
+    <!-- 歌词 -->
+    <Lyric class="lyric" isHiddenLyric="{{isHiddenLyric}}" bindtap="handleToggleLyricShow" lyric="{{lyric}}"></Lyric>
+    <!-- 进度条 -->
+    <view class="progressContainer">
+        <ProgressBar bind:musicEnd="handleNext" isSame="{{isSame}}" bind:timeUpdate="timeUpdate" bind:onPlay="onPlay" bind:onPause="onPause"></ProgressBar>
+    </view>
+    <!-- 控制区域 -->
+    <view class="control">
+        <text class="iconfont icon-shangyishou" bindtap="handlePrev"></text>
+        <text class="iconfont {{isPlaying?'icon-zanting':'icon-bofang'}}" bindtap="handleTogglePlayState"></text>
+        <text class="iconfont icon-next" bindtap="handleNext"></text>
+    </view>
+</view>

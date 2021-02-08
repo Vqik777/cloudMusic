@@ -1,0 +1,24 @@
+.progressBar {
+  display: flex;
+  align-items: center;
+}
+.progressBar .control {
+  margin: 0 10rpx;
+  flex: 1;
+  position: relative;
+}
+.progressBar .control .movable-area {
+  position: absolute;
+  width: 100%;
+  height: 36rpx;
+  bottom: -7px;
+}
+.progressBar .control .movable-area .movable-view {
+  width: 36rpx;
+  height: 36rpx;
+  background-color: white;
+  border-radius: 50%;
+}
+.progressBar .time {
+  color: white;
+}

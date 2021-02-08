@@ -1,0 +1,49 @@
+<view class="search">
+    <!-- 搜索框 -->
+    <view class="searchInput">
+        <text class="iconfont icon-search1"></text>
+        <input type="text" placeholder="搜索歌曲" bindinput="handleInputChange" value="{{searchKeywords}}"></input>
+        <text class="cancel" bindtap="handleCancel" hidden="{{!searchKeywords}}">×</text>
+    </view>
+    <block wx:if="{{searchList.length}}">
+        <!-- 搜索内容展示 -->
+        <view class="searchListContainer">
+            <view class="searchContent">搜索内容:<text>{{searchKeywords}}</text></view>
+            <scroll-view class="searchList" scroll-y>
+                <view class="searchItem" wx:for="{{searchList}}" wx:key="id" bindtap="handleToPlayer"
+                    data-musicid="{{item.id}}" data-name="{{item.name}}"><text
+                        class="iconfont icon-search1"></text>{{item.name}}-{{item.artists[0].name}}</view>
+            </scroll-view>
+        </view>
+    </block>
+    <block wx:else>
+        <scroll-view class="contentWrapper" scroll-y>
+            <!-- 搜索历史 -->
+            <view class="history" wx:if="{{historyList.length}}">
+                <view class="title">搜索历史</view>
+                <view class="content">
+                    <view class="historyItem" wx:for="{{historyList}}" wx:key="item" bindtap="handleHistoryItem"
+                        data-value="{{item}}">{{item}} </view>
+                </view>
+                <view class="footer">
+                    <text class="iconfont icon-shanchu"></text>
+                    <text class="text" bindtap="handleClearHistory">清空历史记录</text>
+                </view>
+            </view>
+            <!-- 热搜榜 -->
+            <view class="hot">
+                <view class="title">热门搜索</view>
+                <view class="content">
+                    <view class="hotItem" wx:for="{{hotList}}" wx:key="searchWord" bindtap="handleHotItem"
+                        data-value="{{item.searchWord}}">
+                        <text class="num">{{index+1}}</text>
+                        <text class="name">{{item.searchWord}}</text>
+                        <image class="" src="{{item.iconUrl}}" wx:if="{{item.iconUrl}}"></image>
+                    </view>
+                </view>
+            </view>
+
+        </scroll-view>
+
+    </block>
+</view>

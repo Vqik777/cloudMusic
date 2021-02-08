@@ -1,0 +1,7 @@
+<scroll-view class="lyricScroll" scroll-y hidden="{{isHiddenLyric}}" scroll-top="{{scrollTop}}">
+    <view class="lyricContainer">
+        <view class="lyricItem {{currentLyricIndex==index?'active':''}}" wx:for="{{lyricList}}" wx:key="item" >
+            {{item.lyric}}
+        </view>
+    </view>
+</scroll-view>

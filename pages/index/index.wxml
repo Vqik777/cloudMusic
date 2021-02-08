@@ -1,0 +1,22 @@
+<view class="index">
+    <!-- 轮播图 -->
+    <swiper class="indexSwiper" indicator-dots autoplay circular>
+        <swiper-item wx:for="{{banner}}" wx:key="imageUrl">
+            <image src="{{item.imageUrl}}"></image>
+        </swiper-item>
+    </swiper>
+    <!-- 推荐歌单 -->
+    <view class="recommendPersonalized">
+        <view class="title">热门歌单推荐</view>
+        <scroll-view class="content" scroll-y>
+            <navigator class="personalizedItem" wx:for="{{personalized}}" wx:key="id" open-type="navigate" url="/pages/personalizedDetail/personalizedDetail?personalizedid={{item.id}}">
+                <image src="{{item.picUrl}}">
+                </image>
+                <view class="info">
+                    <text class="name">{{item.name}}</text>
+                    <text class="desc">{{item.copywriter}}</text>
+                </view>
+            </navigator>
+        </scroll-view>
+    </view>
+</view>

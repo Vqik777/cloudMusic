@@ -1,0 +1,56 @@
+.index {
+    .indexSwiper {
+        height: 380rpx;
+
+        image {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .recommendPersonalized {
+        .title {
+            height: 80rpx;
+            color: #d5ad2f;
+            text-align: center;
+            line-height: 80rpx;
+        }
+
+        .content {
+            height: ~'calc(100vh - 460rpx)';
+
+            .personalizedItem {
+                display: flex;
+                padding: 0 20rpx;
+                image {
+                    width: 120rpx;
+                    height: 120rpx;
+                    margin: 20rpx 20rpx 0 0;
+                }
+
+                .info {
+                    display: flex;
+                    flex: 1;
+                    flex-direction: column;
+                    justify-content: space-around;
+
+                    .name {
+                        color: white;
+                        display: -webkit-box;
+                        -webkit-box-orient: vertical;
+                        -webkit-line-clamp: 1;
+                        overflow: hidden;
+                    }
+
+                    .desc {
+                        display: -webkit-box;
+                        -webkit-box-orient: vertical;
+                        -webkit-line-clamp: 1;
+                        overflow: hidden;
+                    }
+                }
+            }
+
+        }
+    }
+}

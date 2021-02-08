@@ -1,0 +1,44 @@
+.index .indexSwiper {
+  height: 380rpx;
+}
+.index .indexSwiper image {
+  width: 100%;
+  height: 100%;
+}
+.index .recommendPersonalized .title {
+  height: 80rpx;
+  color: #d5ad2f;
+  text-align: center;
+  line-height: 80rpx;
+}
+.index .recommendPersonalized .content {
+  height: calc(100vh - 460rpx);
+}
+.index .recommendPersonalized .content .personalizedItem {
+  display: flex;
+  padding: 0 20rpx;
+}
+.index .recommendPersonalized .content .personalizedItem image {
+  width: 120rpx;
+  height: 120rpx;
+  margin: 20rpx 20rpx 0 0;
+}
+.index .recommendPersonalized .content .personalizedItem .info {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.index .recommendPersonalized .content .personalizedItem .info .name {
+  color: white;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+}
+.index .recommendPersonalized .content .personalizedItem .info .desc {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+}

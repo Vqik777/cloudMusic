@@ -1,0 +1,107 @@
+.search {
+  padding: 0 30rpx;
+}
+.search .searchInput {
+  height: 80rpx;
+  position: relative;
+}
+.search .searchInput .icon-search1 {
+  position: absolute;
+  font-size: 40rpx;
+  left: 10rpx;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.search .searchInput input {
+  height: 100%;
+  background-color: #333333;
+  padding: 0 60rpx;
+}
+.search .searchInput .cancel {
+  position: absolute;
+  z-index: 1;
+  right: 0;
+  top: 0;
+  width: 60rpx;
+  height: 80rpx;
+  text-align: center;
+  line-height: 80rpx;
+  font-size: 40rpx;
+}
+.search .searchListContainer .searchContent {
+  height: 80rpx;
+  line-height: 80rpx;
+  border-bottom: 1rpx solid #333333;
+}
+.search .searchListContainer .searchContent text {
+  color: white;
+}
+.search .searchListContainer .searchList {
+  height: calc(100vh - 160rpx);
+}
+.search .searchListContainer .searchList .searchItem {
+  height: 80rpx;
+  line-height: 80rpx;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+}
+.search .searchListContainer .searchList .searchItem .icon-search1 {
+  margin-right: 10rpx;
+}
+.search .history .title {
+  height: 80rpx;
+  line-height: 100rpx;
+}
+.search .history .content {
+  display: flex;
+  flex-wrap: wrap;
+}
+.search .history .content .historyItem {
+  padding: 5rpx 18rpx;
+  background-color: #333333;
+  margin: 10rpx;
+  border-radius: 15rpx;
+}
+.search .history .footer {
+  margin-top: 20rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.search .history .footer .icon-shanchu,
+.search .history .footer .text {
+  font-size: 32rpx;
+}
+.search .hot .title {
+  height: 80rpx;
+  line-height: 100rpx;
+}
+.search .hot .content {
+  display: flex;
+  flex-wrap: wrap;
+}
+.search .hot .content .hotItem {
+  width: 50%;
+  height: 80rpx;
+  display: flex;
+  align-items: center;
+}
+.search .hot .content .hotItem .num {
+  margin: 0 10rpx;
+}
+.search .hot .content .hotItem .name {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+}
+.search .hot .content .hotItem image {
+  width: 35rpx;
+  height: 20rpx;
+  margin-left: 10rpx;
+}
+.search .contentWrapper {
+  height: calc(100vh - 80rpx);
+}

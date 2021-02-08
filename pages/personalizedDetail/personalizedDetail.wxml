@@ -1,0 +1,15 @@
+<view class="personalizedDetail">
+    <!-- 头部 -->
+    <view class="header">
+        <image src="{{coverImgUrl}}"></image>
+    </view>
+    <!-- 内容 -->
+    <scroll-view class="content" scroll-y>
+        <view class="personalizedItem" wx:for="{{playlistDetail}}" wx:key="id" bind:tap="handleToPlayer" data-musicid="{{item.id}}" data-name="{{item.name}}">
+            <view class="info">
+                <text class="name">{{item.name}}</text>
+                <text class="desc">{{item.ar[0].name}}</text>
+            </view>
+        </view>
+    </scroll-view>
+</view>

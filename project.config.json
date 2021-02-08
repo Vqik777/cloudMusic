@@ -1,0 +1,83 @@
+{
+  "description": "项目配置文件",
+  "packOptions": {
+    "ignore": []
+  },
+  "setting": {
+    "urlCheck": true,
+    "es6": true,
+    "enhance": true,
+    "postcss": true,
+    "preloadBackgroundData": false,
+    "minified": true,
+    "newFeature": false,
+    "coverView": true,
+    "nodeModules": false,
+    "autoAudits": false,
+    "showShadowRootInWxmlPanel": true,
+    "scopeDataCheck": false,
+    "uglifyFileName": false,
+    "checkInvalidKey": true,
+    "checkSiteMap": true,
+    "uploadWithSourceMap": true,
+    "compileHotReLoad": false,
+    "useMultiFrameRuntime": true,
+    "useApiHook": true,
+    "useApiHostProcess": true,
+    "babelSetting": {
+      "ignore": [],
+      "disablePlugins": [],
+      "outputPath": ""
+    },
+    "bundle": false,
+    "useIsolateContext": true,
+    "useCompilerModule": true,
+    "userConfirmedUseCompilerModuleSwitch": false,
+    "userConfirmedBundleSwitch": false,
+    "packNpmManually": false,
+    "packNpmRelationList": [],
+    "minifyWXSS": true
+  },
+  "compileType": "miniprogram",
+  "libVersion": "2.9.0",
+  "appid": "wx922b1eae2de0fb12",
+  "projectname": "cloudMusic",
+  "debugOptions": {
+    "hidedInDevtools": []
+  },
+  "scripts": {},
+  "isGameTourist": false,
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "name": "歌单详情",
+          "pathName": "pages/personalizedDetail/personalizedDetail",
+          "query": "personalizedid=5360921274",
+          "scene": null
+        },
+        {
+          "name": "播放器",
+          "pathName": "pages/player/player",
+          "query": "musicid=1330348068",
+          "scene": null
+        },
+        {
+          "name": "搜索",
+          "pathName": "pages/search/search",
+          "query": "",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

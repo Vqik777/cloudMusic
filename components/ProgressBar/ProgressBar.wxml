@@ -1,0 +1,10 @@
+<view class="progressBar">
+    <text class="time">{{showTime.currentTime}}</text>
+    <view class="control">
+        <movable-area class="movable-area">
+            <movable-view class="movable-view" direction="horizontal"  x="{{movableDist}}" damping="1000" bindchange="onChange" bindtouchend="touchEnd"></movable-view>
+        </movable-area>
+        <progress class="" percent="{{progress}}"  stroke-width="4"  backgroundColor="#24262c" activeColor="#ffcd32" ></progress>
+    </view>
+    <text class="time">{{showTime.totalTime}}</text>
+</view>
